@@ -1,0 +1,42 @@
+{
+  "name": "api-help-professional",
+  "version": "1.0.0",
+  "description": "Api desenvolvida para o aplicativo ajude um profissional!",
+  "main": "src/server.js",
+  "scripts": {
+    "prod": "node src/server.js",
+    "test": "cross-env NODE_ENV=test jest",
+    "start": "nodemon src/server.js"
+  },
+  "keywords": ["help","email", "whatsapp", "professional"],
+  "author": {
+    "name": "Huriel Correia Lopes",
+    "email": "huriellopes1996@gmail.com",
+    "url": "https://huriellopes.github.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huriellopes/api-help-professional.git"
+  },
+  "bugs": "https://github.com/huriellopes/api-help-professional/issues",
+  "engines": {
+    "node": ">= 12.16.1",
+    "npm": ">= 6.13.4",
+    "yarn": "^1.22.4"
+  },
+  "dependencies": {
+    "celebrate": "^12.1.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.21.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  },
+  "license": "MIT"
+}
