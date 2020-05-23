@@ -1,4 +1,5 @@
 const app = require('./app')
+const config = require('./config')
 
-app.listen(process.env.PORT || 5000, 
+app.listen(config.port || 3333, 
   () => console.log('Server is running!'))
