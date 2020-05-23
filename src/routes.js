@@ -10,10 +10,10 @@ const ProfessionalController = require('../app/Controllers/ProfessionalControlle
 const routes = express.Router()
 
 // Rota de Teste
-routes.get('/test', (req, res) => res.send('Api working!'))
+routes.get('/test', (_req, res) => res.send('Api working!'))
 
 // Rotas de Professional
-routes.get('/', ProfessionalController.index)
+routes.get('/professional', ValidMiddleware.validaPage(Segments.QUERY, Joi), ProfessionalController.index)
 routes.get('/show/:id', ValidMiddleware.validaParam(Segments.PARAMS, Joi), ProfessionalController.show)
 routes.post('/create', ValidMiddleware.validaCampo(Segments.BODY, Joi), ProfessionalController.create)
 

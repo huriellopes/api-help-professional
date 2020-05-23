@@ -2,3 +2,6 @@
 node_modules/
 package-lock.json
 .env
+config/database/test.sqlite
+config/database/test.sqlite-journal
+config/database/db.sqlite
